@@ -10,6 +10,7 @@ import CollageInfo from "../pages/Collages/CollageInfo";
 import Admission from "../pages/Admission/Admission";
 import CollageInformation from "../pages/Admission/CollageInformation";
 import MyCollage from "../pages/MyCollage/MyCollage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/collageInfo/:id",
-        element: <CollageInfo />,
+        element: <PrivateRoute><CollageInfo /></PrivateRoute>,
         loader: ({ params }) =>
           fetch(
             `https://education-master-server.vercel.app/collage/${params.id}`
@@ -35,7 +36,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/cartDetails/:id",
-        element: <CartDetails />,
+        element: (
+          <PrivateRoute>
+            <CartDetails />
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(
             `https://education-master-server.vercel.app/collage/${params.id}`
@@ -51,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/myCollage",
-        element: <MyCollage />
+        element: <MyCollage />,
       },
       {
         path: "/login",
