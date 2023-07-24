@@ -15,7 +15,7 @@ const PhotoGallery = () => {
   }, []);
   return (
     <>
-      <div className="mt-4">
+      <div className="my-8 px-4">
         <SectionTitle heading={"Collage Image Gallery"} />
       </div>
       <Container>

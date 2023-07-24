@@ -1,14 +1,8 @@
-Add a “Details” button to the card. After clicking the details button user will go to a different route, that route will contain the college details including images, and college names. admission process, events details, research works, and sports categories in a detailed way. 
-
-Next section will contain some research paper links that were researched by the college students the website is recommending.
+ Next section will contain some research paper links that were researched by the college students the website is recommending.
 
 A review section will be next where users can see the reviews and feedback about specific Colleges.
 
 Routes: 
-In the “College” route, the user will see all college names and details provided by the website.
-There will be a minimum of 5 or 6 colleges cards. 
-In the card, the users can see the college image, college name, college rating, admission date, number of the research of that college, and details button. after clicking the details button user can see the details including “events” and “sports” facilities.
-
 The “Admission” route will show some college names, after clicking the college names there will be some input fields containing ‘Candidate Name, Subject, Candidate Email, Candidate Phone number, address, date of birth, and image field. And submit button. 
 
 After clicking the submit button all info will be in the “my college” route.
