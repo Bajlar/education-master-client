@@ -1,9 +1,7 @@
- Next section will contain some research paper links that were researched by the college students the website is recommending.
-
 A review section will be next where users can see the reviews and feedback about specific Colleges.
 
 Routes: 
-The “Admission” route will show some college names, after clicking the college names there will be some input fields containing ‘Candidate Name, Subject, Candidate Email, Candidate Phone number, address, date of birth, and image field. And submit button. 
+The “Admission” route will show some college names, after clicking the college names there will be some b jd submit button. 
 
 After clicking the submit button all info will be in the “my college” route.
 In this route, user can see their collage details and add a review.

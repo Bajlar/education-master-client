@@ -10,13 +10,15 @@ const Research = () => {
       </div>
       <Container>
         <ul className="text-lg text-center underline text-blue-600">
-          <a
-            href="https://www.collegeboard.org/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            PQR College
-          </a>
+          <li>
+            <a
+              href="https://www.collegeboard.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              PQR College
+            </a>
+          </li>
           <li>
             <a
               href="https://www.commonapp.org/"

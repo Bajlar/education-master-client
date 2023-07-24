@@ -6,7 +6,7 @@ const CollageCart = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/collages")
+    fetch("https://education-master-server.vercel.app/collages")
       .then((res) => res.json())
       .then((data) => {
         setCartItems(data);
@@ -19,10 +19,7 @@ const CollageCart = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {cartItems.slice(0, 3).map((item) => (
-            <SingleCart
-              key={item._id}
-              item={item}
-            />
+            <SingleCart key={item._id} item={item} />
           ))}
         </div>
       </Container>

@@ -7,6 +7,9 @@ import SignUp from "../pages/SignUp/SignUp";
 import CartDetails from "../pages/Home/CollageCart/CartDetails";
 import Collages from "../pages/Collages/Collages";
 import CollageInfo from "../pages/Collages/CollageInfo";
+import Admission from "../pages/Admission/Admission";
+import CollageInformation from "../pages/Admission/CollageInformation";
+import MyCollage from "../pages/MyCollage/MyCollage";
 
 const router = createBrowserRouter([
   {
@@ -26,13 +29,29 @@ const router = createBrowserRouter([
         path: "/collageInfo/:id",
         element: <CollageInfo />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/collage/${params.id}`),
+          fetch(
+            `https://education-master-server.vercel.app/collage/${params.id}`
+          ),
       },
       {
         path: "/cartDetails/:id",
         element: <CartDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/collage/${params.id}`),
+          fetch(
+            `https://education-master-server.vercel.app/collage/${params.id}`
+          ),
+      },
+      {
+        path: "/admission",
+        element: <Admission />,
+      },
+      {
+        path: "/information",
+        element: <CollageInformation />,
+      },
+      {
+        path: "/myCollage",
+        element: <MyCollage />
       },
       {
         path: "/login",

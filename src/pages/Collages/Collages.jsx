@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import Container from '../../components/Container/Container';
-import CartItem from './CartItem';
+import React, { useEffect, useState } from "react";
+import Container from "../../components/Container/Container";
+import CartItem from "./CartItem";
 
 const Collages = () => {
   const [collageList, setCollageList] = useState([]);
-  
+
   useEffect(() => {
-    fetch("http://localhost:5000/collages")
+    fetch("https://education-master-server.vercel.app/collages")
       .then((res) => res.json())
       .then((data) => {
         setCollageList(data);
@@ -14,7 +14,7 @@ const Collages = () => {
   }, []);
 
   return (
-    <div>
+    <div className="my-8">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {collageList.map((item) => (

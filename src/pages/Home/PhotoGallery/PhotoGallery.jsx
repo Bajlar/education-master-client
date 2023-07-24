@@ -7,7 +7,7 @@ const PhotoGallery = () => {
   const [photoGallery, setPhotoGallery] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/gallery")
+    fetch("https://education-master-server.vercel.app/gallery")
       .then((res) => res.json())
       .then((data) => {
         setPhotoGallery(data);

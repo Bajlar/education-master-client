@@ -21,10 +21,10 @@ const MenuDropdown = () => {
               <NavLink to="/collages">Colleges</NavLink>
             </li>
             <li>
-              <NavLink to="/">Admission</NavLink>
+              <NavLink to="/admission">Admission</NavLink>
             </li>
             <li>
-              <NavLink to="/">My College</NavLink>
+              <NavLink to="/myCollage">My College</NavLink>
             </li>
             <div className="text-lg text-purple-500">
               {user && user.displayName}
@@ -58,13 +58,13 @@ const MenuDropdown = () => {
               Colleges
             </Link>
             <Link
-              to="/"
+              to="/admission"
               className="block md:hidden px-4 py-3 hover:bg-neutral-100 transition font-semibold"
             >
               Admission
             </Link>
             <Link
-              to="/"
+              to="/myCollage"
               className="block md:hidden px-4 py-3 hover:bg-neutral-100 transition font-semibold"
             >
               My College
